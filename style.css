@@ -230,6 +230,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   padding: 1rem 1.5rem;
   border-radius: 30px;
   border: none;
