@@ -103,6 +103,10 @@ body {
 .card {
   --card-padding: 1.5rem;
   --card-border-radius: 2rem;
+  --card-linear-gradient: linear-gradient(
+    var(--clr-gradients-900-bg),
+    var(--clr-gradients-500-bg)
+  );
 
   border-radius: var(--card-border-radius);
   overflow: hidden;
@@ -234,6 +238,13 @@ body {
   font-family: var(--ff-base);
   font-size: 1.125rem;
   color: var(--clr-neutral-100);
+}
+
+.button:is(:hover, :focus) {
+  background: linear-gradient(
+    var(--clr-gradients-900-bg),
+    var(--clr-gradients-500-bg)
+  );
 }
 
 /** ----- FOOTER ----- **/
