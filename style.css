@@ -22,6 +22,8 @@
   --fw-500: 500;
   --fw-700: 700;
   --fw-800: 800;
+
+  --ff-base: 'Hanken Grotesk', sans-serif;
 }
 
 /*
@@ -82,12 +84,15 @@ h6 {
 
 /** ----- MAIN ----- **/
 body {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: var(--ff-base);
   font-weight: var(--clr-gradients-500-bg);
   font-size: 0.875rem;
   color: var(--clr-neutral-300);
 
   background-color: var(--clr-neutral-100);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
 }
 
 .score__hero,
@@ -103,8 +108,9 @@ body {
   overflow: hidden;
 
   display: grid;
+  max-width: 650px;
 
-  margin: -5px;
+  margin: -7px;
 }
 
 .card__result {
@@ -151,18 +157,20 @@ body {
   text-align: center;
 }
 
+@media (min-width: 650px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .summary {
   padding: var(--card-padding);
+  display: grid;
 }
 
 .summary__title {
   color: var(--clr-neutral-800);
   margin-bottom: 1rem;
-}
-
-.summary__section {
-  display: grid;
-  gap: 1rem;
 }
 
 .flex-group {
@@ -171,16 +179,18 @@ body {
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
+  margin-bottom: 1.125rem;
 }
 
 .summary__score {
   color: var(--clr-neutral-800);
   font-weight: var(--fw-700);
+  font-size: 1rem;
 }
 
 .summary__hero {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .red-txt {
@@ -213,6 +223,17 @@ body {
 
 .blue-bg {
   background-color: var(--clr-primary-blue);
+}
+
+.button {
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--clr-neutral-800);
+  font-weight: var(--fw-800);
+  font-family: var(--ff-base);
+  font-size: 1.125rem;
+  color: var(--clr-neutral-100);
 }
 
 /** ----- FOOTER ----- **/
