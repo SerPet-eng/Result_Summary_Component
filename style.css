@@ -1,8 +1,13 @@
 :root {
-  --clr-primary-red: hsl(0, 100%, 67%);
-  --clr-primary-yellow: hsl(39, 100%, 56%);
-  --clr-primary-green: hsl(166, 100%, 37%);
-  --clr-primary-blue: hsl(234, 85%, 45%);
+  --clr-primary-red: hsla(0, 100%, 67%, 0.1);
+  --clr-primary-yellow: hsla(39, 100%, 56%, 0.1);
+  --clr-primary-green: hsla(166, 100%, 37%, 0.1);
+  --clr-primary-blue: hsla(234, 85%, 45%, 0.1);
+
+  --clr-primary-red-text: hsl(0, 100%, 67%);
+  --clr-primary-yellow-text: hsl(39, 100%, 56%);
+  --clr-primary-green-text: hsl(166, 100%, 37%);
+  --clr-primary-blue-text: hsl(234, 85%, 45%);
 
   --clr-gradients-900-bg: hsl(252, 100%, 67%);
   --clr-gradients-500-bg: hsl(241, 81%, 54%);
@@ -86,19 +91,18 @@ body {
 }
 
 .score__hero,
-.card__title,
-.card__message,
-.card__description {
+.card__message {
   color: var(--clr-neutral-100);
 }
 
 .card {
-  --card-padding: 1rem;
-  --card-border-radius: 1.5rem;
+  --card-padding: 1.5rem;
+  --card-border-radius: 2rem;
 
   border-radius: var(--card-border-radius);
-  border: 1px solid red;
   overflow: hidden;
+
+  display: grid;
 
   margin: -5px;
 }
@@ -108,6 +112,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  padding: 2rem;
 
   background: linear-gradient(
     var(--clr-gradients-900-bg),
@@ -139,6 +145,74 @@ body {
 .card__message {
   font-size: 1.5rem;
   font-weight: var(--fw-700);
+}
+
+.card__description {
+  text-align: center;
+}
+
+.summary {
+  padding: var(--card-padding);
+}
+
+.summary__title {
+  color: var(--clr-neutral-800);
+  margin-bottom: 1rem;
+}
+
+.summary__section {
+  display: grid;
+  gap: 1rem;
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.summary__score {
+  color: var(--clr-neutral-800);
+  font-weight: var(--fw-700);
+}
+
+.summary__hero {
+  display: flex;
+  gap: 1rem;
+}
+
+.red-txt {
+  color: var(--clr-primary-red-text);
+}
+
+.yellow-txt {
+  color: var(--clr-primary-yellow-text);
+}
+
+.green-txt {
+  color: var(--clr-primary-green-text);
+}
+
+.blue-txt {
+  color: var(--clr-primary-blue-text);
+}
+
+.red-bg {
+  background-color: var(--clr-primary-red);
+}
+
+.yellow-bg {
+  background-color: var(--clr-primary-yellow);
+}
+
+.green-bg {
+  background-color: var(--clr-primary-green);
+}
+
+.blue-bg {
+  background-color: var(--clr-primary-blue);
 }
 
 /** ----- FOOTER ----- **/
