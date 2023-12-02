@@ -249,8 +249,11 @@ body {
 
 /** ----- FOOTER ----- **/
 .attribution {
+  margin: 1rem;
   font-size: 11px;
   text-align: center;
+  color: var(--clr-neutral-800);
+  font-weight: var(--fw-700);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
