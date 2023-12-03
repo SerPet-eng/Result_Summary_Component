@@ -112,9 +112,11 @@ body {
   overflow: hidden;
 
   display: grid;
-  max-width: 650px;
+  max-width: 700px;
 
   margin: -7px;
+
+  box-shadow: 0 0 10px 1px var(--clr-neutral-800);
 }
 
 .card__result {
@@ -133,6 +135,13 @@ body {
   border-radius: var(--card-border-radius);
 }
 
+@media (min-width: 650px) {
+  .card__result {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+}
+
 .card__title {
   font-weight: var(--fw-700);
   font-size: 1.125rem;
@@ -140,7 +149,7 @@ body {
 
 .score {
   text-align: center;
-  padding: 1rem 2.5rem;
+  padding: 3rem 4.5rem;
   border-radius: 50%;
   background: linear-gradient(
     var(--clr-gradients-400-1-circle),
@@ -162,7 +171,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .card {
     grid-template-columns: 1fr 1fr;
   }
@@ -171,6 +180,7 @@ body {
 .summary {
   padding: var(--card-padding);
   display: grid;
+  background-color: var(--clr-neutral-100);
 }
 
 .summary__title {
