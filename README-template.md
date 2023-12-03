@@ -130,6 +130,10 @@ I'm not sure how can I able to mimic the design provided by Frontend Mentor espe
 
 > I think the whole `card__result` need some adjustment, especially with the _<h1>, <h2>,_ and _<p>_. I'm not quite satisfied with the font-size of these said HTML element, but nonetheless I somehow manage to re-create the design by Frontend Mentor, so that's a big win for me.
 
+**ALSO**
+
+> The _semantics_ of HTML, I haven't given a thought or time yet to add **accessibility** to my `index.html` and `style.css`. There still a lot of improvement that may take on this one, but overall it looks great in my opinion.
+
 ### Useful resources
 
 - [CSS Custom Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This site really useful in terms of making a custom CSS reset, making styling consistent throughout.
@@ -146,6 +150,4 @@ I'm not sure how can I able to mimic the design provided by Frontend Mentor espe
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I want to acknowledge my family and friends for supporting me and for my specific inspiration in terms of Frontend Developing. First of [Hattori Hanzo](https://www.facebook.com/areyes2022) and [Kevin Powell](https://www.youtube.com/@KevinPowell)
