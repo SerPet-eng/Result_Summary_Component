@@ -169,6 +169,8 @@ body {
 
 .card__description {
   text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 @media (min-width: 700px) {
