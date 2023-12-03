@@ -144,7 +144,7 @@ I'm not sure how can I able to mimic the design provided by Frontend Mentor espe
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Netlify - Fate](https://jazzy-hummingbird-d17433.netlify.app/)
 - Frontend Mentor - [@SerPet-eng](https://www.frontendmentor.io/profile/SerPet-eng)
 - Twitter - [@dchristian796](https://twitter.com/dchristian796)
 
