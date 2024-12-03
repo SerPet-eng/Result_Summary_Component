@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   // Use the returned data
   const data = await getData();
-  if (data) {
-    console.log('Data fetched:', data);
-    // Perform operations with the data
-  }
+  // if (data) {
+  //   console.log('Data fetched:', data);
+  //   // Perform operations with the data
+  // }
 
   redText.innerHTML = data[0].category;
   redTextScore.innerHTML = data[0].score;
