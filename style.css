@@ -169,6 +169,8 @@ body {
 
 .card__description {
   text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 @media (min-width: 700px) {
@@ -252,7 +254,14 @@ body {
   color: var(--clr-neutral-100);
 }
 
-.button:is(:hover, :focus) {
+.button:hover {
+  background: linear-gradient(
+    var(--clr-gradients-900-bg),
+    var(--clr-gradients-500-bg)
+  );
+}
+
+.button:focus {
   background: linear-gradient(
     var(--clr-gradients-900-bg),
     var(--clr-gradients-500-bg)
